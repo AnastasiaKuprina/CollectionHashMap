@@ -4,7 +4,7 @@ import java.util.Map;
 
 
 public class Main {
-    final static String s =
+    final static String SOURCE_TEXT =
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, " +
                     "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " +
                     "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi " +
@@ -18,8 +18,8 @@ public class Main {
         // символ - колво раз
         Map<Character, Integer> map = new HashMap<>();
 
-        for (int i = 0; i < s.length(); i++) {
-            char symbol = s.charAt(i);
+        for (int i = 0; i < SOURCE_TEXT.length(); i++) {
+            char symbol = SOURCE_TEXT.charAt(i);
             if (!Character.isLetter(symbol)) {
                 continue;
             }
